@@ -10,10 +10,12 @@
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
     "postinstall": "electron-builder install-app-deps",
-    "windows":"electron:windows"
+    "windows": "electron:windows"
   },
-  "build": { 
-    "directories": { "output": "release/" },
+  "build": {
+    "directories": {
+      "output": "release/"
+    },
     "asar": false
   },
   "repository": "",
@@ -21,18 +23,18 @@
   "author": "Pulkit Aggarwal",
   "license": "MIT",
   "devDependencies": {
-    "babel-core": "^6.22.1",
-    "babel-loader": "^6.2.10",
-    "babel-preset-react": "^6.22.0",
-    "babel-preset-stage-1": "^6.22.0",
-    "electron": "^1.4.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "electron": "^11.2.1",
     "electron-builder": "^22.9.1",
     "electron-packager": "^15.2.0",
-    "webpack": "^2.2.1"
+    "webpack": "^5.19.0"
   },
   "dependencies": {
-    "preact": "^7.2.0",
-    "preact-compat": "^3.13.1",
-    "preact-router": "^2.5.5"
+    "preact": "^10.5.12",
+    "preact-compat": "^3.19.0",
+    "preact-router": "^3.2.1"
   }
 }
