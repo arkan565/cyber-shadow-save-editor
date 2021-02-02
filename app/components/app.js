@@ -40,7 +40,7 @@ export default class App extends Component  {
 				"deaths": 0,
 				"playtime_chapter": 46.95139,
 				"playtime": 46.95139,
-				"checkpoint_upgrades_available": 0,
+				"checkpoint_upgrades_available": 1,
 				"mode": "normal",
 				"cleared": 0,
 				"dojo_falcon_defeated": 0,
