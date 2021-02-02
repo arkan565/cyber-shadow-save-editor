@@ -6,25 +6,28 @@
   "scripts": {
     "start": "electron .",
     "watch": "webpack --progress --colors --watch",
-    "build": "webpack --production"
+    "build": "webpack --production --verbose",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps",
+    "windows":"electron:windows"
+  },
+  "build": { 
+    "directories": { "output": "release/" },
+    "asar": false
   },
   "repository": "",
-  "keywords": [
-    "Electron",
-    "preact",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ],
+  "keywords": [],
   "author": "Pulkit Aggarwal",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^1.4.1",
     "babel-core": "^6.22.1",
     "babel-loader": "^6.2.10",
     "babel-preset-react": "^6.22.0",
     "babel-preset-stage-1": "^6.22.0",
+    "electron": "^1.4.1",
+    "electron-builder": "^22.9.1",
+    "electron-packager": "^15.2.0",
     "webpack": "^2.2.1"
   },
   "dependencies": {
