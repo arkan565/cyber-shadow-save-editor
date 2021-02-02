@@ -1,0 +1,35 @@
+{
+  "name": "cyber-shadow-save-editor",
+  "version": "1.0.0",
+  "description": "A save editor for cyber shadow",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "watch": "webpack --progress --colors --watch",
+    "build": "webpack --production"
+  },
+  "repository": "",
+  "keywords": [
+    "Electron",
+    "preact",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "Pulkit Aggarwal",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^1.4.1",
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-react": "^6.22.0",
+    "babel-preset-stage-1": "^6.22.0",
+    "webpack": "^2.2.1"
+  },
+  "dependencies": {
+    "preact": "^7.2.0",
+    "preact-compat": "^3.13.1",
+    "preact-router": "^2.5.5"
+  }
+}
