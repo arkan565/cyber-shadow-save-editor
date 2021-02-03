@@ -1,6 +1,7 @@
 {
-  "presets": ["stage-1", "react"],
+  "sourceMaps": true,
+  "presets": ["@babel/preset-env"],
   "plugins": [
-    ["transform-react-jsx", { "pragma": "h" }]
+    ["@babel/transform-react-jsx", { "pragma": "h" }]
   ]
 }

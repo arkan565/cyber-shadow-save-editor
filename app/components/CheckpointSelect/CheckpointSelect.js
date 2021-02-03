@@ -14,7 +14,6 @@ export default class CheckPointSelect extends Component{
 			selectedCheckpoint,
 			json
 		}
-		console.log(json)
 		this.changeChapter = this.changeChapter.bind(this);
 		this.changeCheckpoint = this.changeCheckpoint.bind(this);
 	}
@@ -36,9 +35,9 @@ export default class CheckPointSelect extends Component{
             Chapter Select
             <br/>
 			<div  class="select">
-				<select onChange={this.changeChapter} value ={this.state.chapter}>
+				<select onChange={this.changeChapter} value={this.state.chapter}>
 					{Object.keys(this.state.json).map(key=>{
-						return <option key={key}>{key}</option>
+						return <option key={key} value={key}>{key}</option>
 					})}
 				</select>
 			</div>
@@ -48,7 +47,7 @@ export default class CheckPointSelect extends Component{
             <div class="select">
 				<select onChange={this.changeCheckpoint} value={this.state.selectedCheckpoint}>
 					{Object.keys(this.state.checkpoint).map(key=>{
-						return <option key={key}>{key}</option>
+						return <option key={key} value={key}>{key}</option>
 					})}
 				</select>
 			</div>

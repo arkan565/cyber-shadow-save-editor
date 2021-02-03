@@ -6,20 +6,22 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
-  target: 'electron',
+  target: 'electron-main',
   module: {
-    loaders: [
+    rules: [
       { test: /\.js$/, 
         exclude: /node_modules/, 
         loader: "babel-loader" 
       }
     ]
   },
+  mode:'production',
   resolve: {
     extensions: ['.jsx', '.js', '.json', '.less'],
-    alias: {
-      "react": "preact-compat",
-      "react-dom": "preact-compat"
-    }
+    "alias": { 
+      "react": "preact/compat",
+      "react-dom/test-utils": "preact/test-utils",
+      "react-dom": "preact/compat"
+    },
   },
 };

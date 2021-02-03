@@ -164,7 +164,7 @@ export default class App extends Component  {
 				<div>
 					<h2 class="subtitle">Parry</h2>
 					<div class="select">
-						<select onChange={(e)=>this.setState({save:{...this.state.save,wpn_wallgrab_unlocked:parseInt(e.target.value)}})}>
+						<select value={this.state.save.wpn_parry_unlocked} onChange={(e)=>this.setState({save:{...this.state.save,wpn_parry_unlocked:parseInt(e.target.value)}})}>
 							<option value={0}>Locked</option>
 							<option value={1}>Unlocked</option>
 						</select>
